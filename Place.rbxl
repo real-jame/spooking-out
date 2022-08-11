@@ -28,18 +28,18 @@
 				<Ref name="CameraSubject">null</Ref>
 				<token name="CameraType">0</token>
 				<CoordinateFrame name="CoordinateFrame">
-					<X>-77.8915329</X>
-					<Y>50.6336098</Y>
-					<Z>11.220747</Z>
-					<R00>-0.347256809</R00>
-					<R01>0.357741982</R01>
-					<R02>-0.866852582</R02>
-					<R10>-7.4505806e-009</R10>
-					<R11>0.924376488</R11>
-					<R12>0.381481558</R12>
-					<R20>0.937770069</R20>
-					<R21>0.132472068</R21>
-					<R22>-0.320996016</R22>
+					<X>-42.0078697</X>
+					<Y>48.1551208</Y>
+					<Z>23.0710449</Z>
+					<R00>0.280998915</R00>
+					<R01>-0.247179598</R01>
+					<R02>0.927330494</R02>
+					<R10>-0</R10>
+					<R11>0.966263115</R11>
+					<R12>0.257557064</R12>
+					<R20>-0.959708095</R20>
+					<R21>-0.0723732561</R21>
+					<R22>0.271518856</R22>
 				</CoordinateFrame>
 				<CoordinateFrame name="Focus">
 					<X>-60.5544815</X>
@@ -1023,8 +1023,8 @@ while true do
 	if playerCount &lt; MIN_PLAYERS then
 		hint.Text = string.format(&quot;Not enough players! Get %d more to start a round.&quot;, MIN_PLAYERS - playerCount)
 	else
-		for timeLeft = INTERMISSION_TIME, 0, -1 do
-			hint.Text = string.format(&quot;Intermission - the next round will begin in %d seconds.&quot;, INTERMISSION_TIME)
+		for timeLeft = INTERMISSION_TIME, 1, -1 do
+			hint.Text = string.format(&quot;Intermission - the next round will begin in %d seconds.&quot;, timeLeft)
 			wait(1)
 		end
 		hint.Text = &quot;The game will start soon!&quot;
@@ -87561,5 +87561,4 @@ COb+qAzgngAAAABJRU5ErkJggg==</binary></Content>
 			<bool name="archivable">true</bool>
 		</Properties>
 	</Item>
-	<External>RBX1365</External>
 </roblox>
