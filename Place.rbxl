@@ -289,23 +289,23 @@ end</ProtectedString>
 				<Ref name="CameraSubject">null</Ref>
 				<token name="CameraType">0</token>
 				<CoordinateFrame name="CoordinateFrame">
-					<X>324.817017</X>
-					<Y>66.9422226</Y>
-					<Z>146.844391</Z>
-					<R00>0.999649405</R00>
-					<R01>0.00949109998</R01>
-					<R02>-0.0247192346</R02>
-					<R10>9.31322575e-010</R10>
-					<R11>0.933551729</R11>
-					<R12>0.358442843</R12>
-					<R20>0.0264787003</R20>
-					<R21>-0.358317167</R21>
-					<R22>0.93322438</R22>
+					<X>277.146942</X>
+					<Y>74.5539551</Y>
+					<Z>200.258728</Z>
+					<R00>-0.931876719</R00>
+					<R01>0.0791681632</R01>
+					<R02>-0.354031354</R02>
+					<R10>-0</R10>
+					<R11>0.975897551</R11>
+					<R12>0.218229279</R12>
+					<R20>0.362775177</R20>
+					<R21>0.203362778</R21>
+					<R22>-0.909416139</R22>
 				</CoordinateFrame>
 				<CoordinateFrame name="Focus">
-					<X>325.311401</X>
-					<Y>59.773365</Y>
-					<Z>128.179901</Z>
+					<X>284.22757</X>
+					<Y>70.1893692</Y>
+					<Z>218.447052</Z>
 					<R00>1</R00>
 					<R01>0</R01>
 					<R02>0</R02>
@@ -34705,9 +34705,8 @@ while true do
 			local teamBonus = 0 --TODO calculate
 			Speak(string.format(&quot;Players will now be paid for their individual efforts as well as a team bonus of %u!&quot;, teamBonus), 3)
 		else -- TODO make less-ugly if possible
-			RewardPlayers
-			Speak(&quot;The truck... uh, it did that. Pity points are to be given due to this error.&quot;, 3)
 			RewardPlayers(Total)
+			Speak(&quot;The truck... uh, it did that. Pity points are to be given due to this error.&quot;, 3)
 		end
 	else
 		Speak(&quot;No boxes were packed in...&quot;, 3)
