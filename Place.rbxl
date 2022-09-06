@@ -281,7 +281,7 @@ local function Buy(item, player)
 
 		local effects = partSkin:FindFirstChild(&quot;SelectedEffects&quot;)
 		if effects then
-			effects:Destroy() --Clear all children
+			effects:Remove() --Clear all children
 		end
 		if not effects then
 			effects = Instance.new(&quot;Model&quot;)
@@ -350,9 +350,9 @@ end</ProtectedString>
 				<Ref name="CameraSubject">null</Ref>
 				<token name="CameraType">0</token>
 				<CoordinateFrame name="CoordinateFrame">
-					<X>268.452179</X>
-					<Y>87.5979385</Y>
-					<Z>169.943787</Z>
+					<X>286.056183</X>
+					<Y>107.865028</Y>
+					<Z>187.360291</Z>
 					<R00>0.70330894</R00>
 					<R01>-0.450235844</R01>
 					<R02>0.550131142</R02>
@@ -364,9 +364,9 @@ end</ProtectedString>
 					<R22>0.544268727</R22>
 				</CoordinateFrame>
 				<CoordinateFrame name="Focus">
-					<X>257.449554</X>
-					<Y>74.931015</Y>
-					<Z>159.058411</Z>
+					<X>275.053558</X>
+					<Y>95.1981049</Y>
+					<Z>176.474915</Z>
 					<R00>1</R00>
 					<R01>0</R01>
 					<R02>0</R02>
